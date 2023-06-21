@@ -1,25 +1,23 @@
 .new-tweet {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-
   margin-top: 2em;
   margin-bottom: 1em;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
 
-.tweet-header {
+.new-tweet .tweet-header {
   display: flex;
   flex-direction: column;
   border-bottom: 4px solid #545149;
   font-family: "Source Sans Pro", sans-serif;
-
 }
 
-.tweet-header>textarea {
+.new-tweet .tweet-header textarea {
   font-family: sans-serif;
   height: 40px;
   color: black;
@@ -28,48 +26,28 @@
   background-color: transparent;
 }
 
-.tweet-footer {
+.new-tweet .tweet-footer {
   font-family: Bungee, sans-serif;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
 
-.tweet-footer>button {
+.new-tweet .tweet-footer button {
   background-color: #4056A1;
   font-size: 15px;
   color: white;
   border: none;
 }
 
-.error {
+.new-tweet .error {
   color: red;
- 
 }
 
-section.tweet {
+.new-tweet section.tweet {
   margin-bottom: 50px;
 }
 
-
-/* styling error message if there is no characters */
-#errorMessage {
-
-  color: red;
-   width: 10;
-  font-style: normal;
-  font-weight: bold;
-  border-collapse: black 3px solid;
-  margin-top: 10px;
-}
-/* styling error message if there is more than 140 characters */
-#wrongCount {
-  
-  color: red;
-  font-style: normal;
-  font-weight: bold
-}
-
-.tweet-wrap {
+.new-tweet .tweet-wrap {
   word-break: break-word;
 }
