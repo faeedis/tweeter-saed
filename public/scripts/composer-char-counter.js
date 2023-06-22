@@ -1,12 +1,18 @@
+const countNumber = 140;
+// can add a.text or a function 
 $(document).ready(function() {
-  $('.new-tweet textarea').on('input', function() {
-    const charCount = $(this).val().length;
-    const counter = $(this).siblings('div').children('.counter');
-    counter.text(140 - charCount);
-    if (charCount > 140) {
-      counter.addClass('invalid');
+  $("#tweet-text").on('input', function() {
+    let count = countNumber - $(this).val().length;
+    let counter = $(this).parent().siblings('.tweet-footer').children('.counter');
+    counter.val(count);
+    if (count < 0) {
+      counter.addClass('error');
     } else {
-      counter.removeClass('invalid');
+      counter.removeClass('error');
     }
+
   });
+
+  
 });
+

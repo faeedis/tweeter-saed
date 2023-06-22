@@ -1,3 +1,9 @@
+/*
+* Client-side JS logic goes here
+* jQuery is already loaded
+* Reminder: Use (and do all your DOM work in) jQuery's document ready function
+*/
+
 //function that escapes 
 $(document).ready(function() {
   const escape = function(str) {
@@ -6,6 +12,7 @@ $(document).ready(function() {
     return div.innerHTML;
   };
 
+  // timeago function implemented below captures how long ago tweet was added
   
   const createTweetElement = function(tweetData) {
     const $tweet = $(`
@@ -94,5 +101,6 @@ $(document).ready(function() {
 
   });
 });
+
 
 

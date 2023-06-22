@@ -1,24 +1,55 @@
 nav {
   height: 120px;
+  color: #FFFFFF ;
   width: 100%;
   background-color: #4056A1;
-  color: #FFFFFF;
-  padding: 0 1.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-nav span {
-  font-family: 'Bungee', sans-serif;
-}
-
-.write-tweet {
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-}
-
-.write-tweet span {
-  margin-right: 0.5em;
-}
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+  
+  
+  }
+  @media only screen and (max-width: 1024px) {
+    nav {
+      background-color: pink;
+      background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
+    }
+  
+  }
+  
+  
+  
+  #logo {
+    font-family:"bungee";
+  }
+  
+  
+  #arrow i  {
+    color: red;
+    
+   
+  }
+  .arrowDown {
+    animation: gelatine 0.5s infinite;
+  }
+  @keyframes  gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+  
+  
+  #arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
