@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+- screen shots
+![Alt Text](docs/tweet-box.png)
+![Alt Text](docs/mobileview.PNG)
+![Alt Text](docs/hover-state.png)
+
